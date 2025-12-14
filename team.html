@@ -3,9 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
+    <title>Q2 Project - Our Team</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+
+    body{
+        background-image: url(laspinas1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .team{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 16px;
+        padding: 40px;
+    }
+
+    .column{
+        flex: calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+
+    @media screen and (max-width: 650px){
+    .column{
+        width: 100%;
+        display: block;
+    }
+    }
+
+    .card{
+        box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .container{
+        padding: 16px;
+    }
+
+    .title{
+        color: grey;
+    }
+
+    .button{
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover{
+        background-color: #555;
+    }
+    </style>
+
 </head>
 <body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Logo.png" alt="logo" height="50px" width="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>          
+    
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"> <a class="nav-link" href="team.html" target="_self">Our Team</a></li>
+            </ul>
+
+            <form class="header d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <div class="about container-fluid mt-3">
+        <div class="container p-5 mt-3 bg-light text-dark">
+        <h3> About Us </h3><hr>
+
+        <h5>Our Mission & Vision</h5>
+        <p>
+        Our Mission: To empower every student to achieve their personal best by fostering critical thinking, compassion, and a lifelong love of learning.
+        <br>
+        Our Vision: To be a leading educational institution recognized for innovative teaching, a supportive community, and students who make a positive impact on the world.
+        </p>
+        
+        <h5>Our Core Values</h5>
+        <p>
+        Integrity: We uphold honesty, ethics, and strong moral principles in all actions.
+        <br>
+        Excellence: We strive for the highest quality in academics and extracurricular activities.
+        <br>
+        Community: We believe in collaboration, respect, and supporting one another.
+        <br>
+        Innovation: We embrace new ideas and adaptive teaching methods to prepare students for the future.
+        </p>
+        
+        <h5>Meet Our Leadership</h5>
+        <p>
+        Message from the President, "At O.B. Montessori Center, we see education as a partnership. 
+        We invite you to join us in creating an environment where every student feels seen, challenged, 
+        and inspired to reach their full potential. Our dedicated faculty and staff are here to guide them every step of the way."
+        </p>
+        </div>
+    </div>  
+
+    <!-- OUR TEAM -->
+    <div class="team">
+        <div class="column">
+            <div class="card">
+            <div class="container">
+                <h2>Arkin San Agustin</h2>
+                <p class="title">Repo &amp; Leader</p>
+                <p>sanagustin.go@obmontessori.edu.ph</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+            <div class="container">
+                <h2>Keona Valdez</h2>
+                <p class="title">Courses Page</p>
+                <p>valdez.kj@obmontessori.edu.ph</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+            <div class="container">
+                <h2>Alyanna Barlisan</h2>
+                <p class="title">Contact Page</p>
+                <p>barlisan.al@obmontessori.edu.ph</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+            <div class="container">
+                <h2>Devon Villostas</h2>
+                <p class="title">Enroll Page</p>
+                <p>villostas.dv@obmontessori.edu.ph</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+            <div class="container">
+                <h2>Shiloh Briones</h2>
+                <p class="title">About Us / Our Team Page</p>
+                <p>briones.sa@obmontessori.edu.ph</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
     
 </body>
 </html>
