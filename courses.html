@@ -2,68 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>courses</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url(https://obmontessori.edu.ph/greenhills);
-            padding: 20px;
-            background-size: cover;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #001d36;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
     
-        }
+    <!-- START OF CSS -->
+    <link rel="stylesheet" href="style.css">
 
-        .courses {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+    <!-- START OF BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-        .course {
-            background-image: url(https://obmontessori.edu.ph/greenhills);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px 
-        }
-
-        .course h2 {
-            color: #001f3a;
-        }
-
-        .course p {
-            color: #000000;
-        }
-
-        .course button {
-            margin-top: 10px;
-            padding: 10px;
-            width: 100%;
-            background-color: #c1e2ff
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .course button:hover {
-            background-color: #c1e2ff;
-        }
-
-        .course img {
-    width: 250px;     
-    height: 180px;
-    border-radius: 20px;
-    text-align: center;
-
-        }
-    </style>
 </head>
-<body>
+<body class="home-page">
 
 <!-- START OF NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -90,55 +40,27 @@
     </nav>
 <!-- END OF NAVBAR -->
 
-     <h1>PROGRAMS</h1>
-    
-
-    <div class="courses">
-
-        <div class="course 1">
-            <h2>CASA</h2>
-            <p>Ages (3–5)</p>
-             <img src="Casa.webp" alt="CASA Class">
-            <button>View Details</button>
-        </div>
-
-        <div class="course 2">
-            <h2>Primary Grade School </h2>
-             <p>(Ages 6-8)</p>
-             <img src="primary.+Montessori+Center+Grade+School+Primary">
-            
-           
-             <button>View Details</button>
-        </div>
-
-        <div class="course 3">
-              <h2>Intermediate Grade School </h2> <p> Ages (6-12)</p>
-            <img src="intermed.webp">
-            <button>View Details</button>
-        </div>
-
-         <div class="course 4">
-            <h2>Junior High School</h2>
-            <p>Ages (13-16)</p>
-            <img src="Jhs.webp">
-            <button>View Details</button>
-        </div>
-
-          <div class="course 5">
-            <h2>Senior High School</h2>
-              <p>Ages (17-18).</p>
-              <img src="shs.webp">
-            <button>View Details</button>
-          </div>
-
-     </div>
+<!-- CONTAINER -->
+    <div class="container-fluid mt-3" style="height:auto;">
+        <!-- SAMPLE CONTENT -->
+         <div class="container p-5 mt-3 bg-light text-dark center-div">
+                <h3>Home Page</h3><hr>
+                    <p>
+                    At O.B. Montessori Center, we are dedicated to providing a nurturing
+                        environment where academic excellence, creativity, and character
+                        development flourish. Explore our innovative programs designed to
+                        prepare students for success in a rapidly changing world.
+                    </p>
+         </div>
+    </div>
+<!-- END OF CONTAINER -->
 
 <!-- START OF FOOTER -->
     <footer class="text-center py-2 bg-dark text-light mt-auto fixed-bottom">
         &copy; 2025 Copyright
     </footer>
 <!-- END OF FOOTER -->
-
+ 
 </body>
-
 </html>
+
